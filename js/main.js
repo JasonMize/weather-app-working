@@ -4,9 +4,8 @@ let API_KEY = '2c0f6a46ae150983ebf41b0d931ae5d4'
 let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=London,uk&APPID=${API_KEY}`
 
 
-
 // ASYNC AXIOS EXAMPLE
-async function getWeather() {
+async function getSomething() {
   try {
     const response = await axios.get(apiUrl)
     console.log('data: ', response.data)
@@ -18,7 +17,7 @@ async function getWeather() {
 
 
 // .THEN AXIOS EXAMPLE
-// function getWeather() {
+// function getSomething() {
 //   axios.get(apiUrl)
 //     .then(response => console.log('data: ', response.data))
 //     .catch(error => {
@@ -29,7 +28,7 @@ async function getWeather() {
 
 
 // ASYNC FETCH EXAMPLE
-// async function getWeather() {
+// async function getSomething() {
 //   try {
 //     const response = await fetch(apiUrl) 
 //     const data = await response.json()
@@ -37,11 +36,11 @@ async function getWeather() {
 //   } catch (error) {
 //     console.log('error: ', error)
 //   }
-
+// }
 
 
 // .THEN FETCH EXAMPLE
-// function getWeather() {
+// function getSomething() {
 //   fetch(apiUrl)
 //     .then(response => response.json())
 //     .then(data => {
@@ -54,4 +53,4 @@ async function getWeather() {
 
 
 
-getWeather()
+// getSomething()
