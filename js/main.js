@@ -13,7 +13,7 @@ async function getSomething() {
     console.log('error: ', error)
   }
 }
-
+getSomething()
 
 
 // .THEN AXIOS EXAMPLE
